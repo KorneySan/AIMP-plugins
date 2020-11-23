@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.546,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.562,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\NextGroup_Impl.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.468,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\NextGroup.dproj=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.171,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\NextGroup_Defines.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Next Group\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
