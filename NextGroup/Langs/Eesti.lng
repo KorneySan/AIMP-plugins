@@ -1,0 +1,8 @@
+﻿[Common]
+Prev/Next group=Eelmine/Järgmine grupp
+aimp.NextGroup.action.prev=Eelmine grupp
+aimp.NextGroup.action.prev.g=Eelmine/Järgmine grupp
+aimp.NextGroup.action.next=Järgmine grupp
+aimp.NextGroup.action.next.g=Eelmine/Järgmine grupp
+aimp.NextGroup.action.random=Juhuslik grupp
+aimp.NextGroup.action.random.g=Eelmine/Järgmine grupp

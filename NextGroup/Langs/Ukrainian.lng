@@ -1,0 +1,8 @@
+﻿[Common]
+Prev/Next group=Попередня/Наступна група
+aimp.NextGroup.action.prev=Попередня група
+aimp.NextGroup.action.prev.g=Попередня/Наступна група
+aimp.NextGroup.action.next=Наступна група
+aimp.NextGroup.action.next.g=Попередня/Наступна група
+aimp.NextGroup.action.random=Випадкова група
+aimp.NextGroup.action.random.g=Попередня/Наступна група

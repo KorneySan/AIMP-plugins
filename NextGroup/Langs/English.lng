@@ -1,0 +1,8 @@
+﻿[Common]
+Prev/Next group=Previous/Next group
+aimp.NextGroup.action.prev=Prev group
+aimp.NextGroup.action.prev.g=Prev/Next group
+aimp.NextGroup.action.next=Next group
+aimp.NextGroup.action.next.g=Prev/Next group
+aimp.NextGroup.action.random=Random group
+aimp.NextGroup.action.random.g=Prev/Next group
