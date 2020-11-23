@@ -3,4 +3,5 @@
 
 Collection of plugins for different purpose
 ---
-- to be filled soon...
+- [NextGroup](docs/NextGroup.md)
+- to be continued...
