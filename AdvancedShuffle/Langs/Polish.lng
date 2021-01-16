@@ -1,0 +1,14 @@
+﻿[AdvancedShuffle]
+Plugin_FrameName=Zaawansowane mieszanie
+AOCB_Enabled=Włączone
+ACBX_PlaylistRandom=Losowa lista odtwarzania:
+ACBX_GroupRandom=Losowa kategoria:
+ACBX_TrackRandom=Losowy plik:
+None=Wyłączone
+Simple=Prosto
+List=Według listy
+Order=Kolejność
+[Common]
+aimp.AdvancedShuffle.action.switch=Włącz/Wyłącz
+aimp.AdvancedShuffle.action.switch.g=Zaawansowane mieszanie
+aimp.AdvancedShuffle.menuitem.switch=Zaawansowane mieszanie

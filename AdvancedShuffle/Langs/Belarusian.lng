@@ -1,0 +1,15 @@
+﻿[AdvancedShuffle]
+Plugin_FrameName=Прасунутае перамешваньне
+AOCB_Enabled=Уключана
+ACBX_PlaylistRandom=Перамешваньне плэйлістоў
+ACBX_GroupRandom=Перамешваньне груп
+ACBX_TrackRandom=Перамешваньне трэкаў
+None=Адсутнічае
+Simple=Простае
+List=Сьпіс
+Order=Парадак
+lbl1=Плэйлісты, выключаныя з перамешваньня
+[Common]
+aimp.AdvancedShuffle.action.switch=Пераключыць стан
+aimp.AdvancedShuffle.action.switch.g=Прасунутае перамешваньне
+aimp.AdvancedShuffle.menuitem.switch=Прасунутае перамешваньне

@@ -1,0 +1,14 @@
+﻿[AdvancedShuffle]
+Plugin_FrameName=Advanced shuffle
+AOCB_Enabled=Luba
+ACBX_PlaylistRandom=Juhuslik mänguloend
+ACBX_GroupRandom=Juhuslik grupp
+ACBX_TrackRandom=Juhuslik lugu
+None=Mitte midagi
+Simple=Lihtne
+List=Nimekiri
+Order=Järjestus
+[Common]
+aimp.AdvancedShuffle.action.switch=Lülituse olek
+aimp.AdvancedShuffle.action.switch.g=Täpsem juhuslikkus
+aimp.AdvancedShuffle.menuitem.switch=Täpsem juhuslikkus

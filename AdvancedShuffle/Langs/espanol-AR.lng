@@ -1,0 +1,14 @@
+﻿[AdvancedShuffle]
+Plugin_FrameName=Shuffle avanzado
+AOCB_Enabled=Habilitado
+ACBX_PlaylistRandom=Shuffle de lista de reproducción
+ACBX_GroupRandom=Shuffle de grupo
+ACBX_TrackRandom=Shuffle de tema
+None=Ninguno
+Simple=Simple
+List=Lista
+Order=Orden
+[Common]
+aimp.AdvancedShuffle.action.switch=Cambiar estado
+aimp.AdvancedShuffle.action.switch.g=Shuffle avanzado
+aimp.AdvancedShuffle.menuitem.switch=Shuffle avanzado

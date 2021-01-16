@@ -1,0 +1,15 @@
+﻿[AdvancedShuffle]
+Plugin_FrameName=Advanced shuffle
+AOCB_Enabled=Enabled
+ACBX_PlaylistRandom=Playlist shuffle
+ACBX_GroupRandom=Group shuffle
+ACBX_TrackRandom=Track shuffle
+None=None
+Simple=Simple
+List=List
+Order=Order
+lbl1=Playlists excluded from shuffle
+[Common]
+aimp.AdvancedShuffle.action.switch=Switch state
+aimp.AdvancedShuffle.action.switch.g=Advanced shuffle
+aimp.AdvancedShuffle.menuitem.switch=Advanced shuffle
