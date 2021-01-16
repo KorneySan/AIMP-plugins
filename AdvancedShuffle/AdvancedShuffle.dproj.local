@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.625,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.155,=g:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.140,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.468,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_Impl.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.784,=C:\Users\Aleksandr Kornienko\Documents\Embarcadero\Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.468,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\Project1.dproj=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.140,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.717,g:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_Impl.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,C:\Users\Aleksandr Kornienko\Documents\Embarcadero\Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_Intf.pas=C:\Users\Aleksandr Kornienko\Documents\Embarcadero\Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.500,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_SetupFrame.dfm=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.365,C:\Users\Aleksandr Kornienko\Documents\Embarcadero\Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_Impl.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.843,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_Defines.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_SetupFrame.dfm=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.515,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_SetupFrame.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.812,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Utils\ControlsLocalization.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.500,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_SetupFrame.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\AdvancedShuffle_SetupFrame.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Advanced Shuffle\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
