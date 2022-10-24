@@ -136,7 +136,7 @@ begin
    with APMService do
     begin
      //get current playlist
-     if not Succeeded(GetPlayablePlaylist(Result)) then
+     if not Succeeded(GetPlayingPlaylist(Result)) then
       begin
        pc:=GetLoadedPlaylistCount;
        //select playlist
@@ -268,7 +268,7 @@ begin
       if myPluginName='' then
         Result := nil
       else
-        Result := myPluginName;
+        Result := myPluginName + ' v' + myPluginVersion;
      end;
     AIMP_PLUGIN_INFO_AUTHOR:
      begin

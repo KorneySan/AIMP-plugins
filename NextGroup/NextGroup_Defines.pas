@@ -7,6 +7,7 @@ type
 
 const
  myPluginName = 'Next Group';
+ myPluginVersion = '1.2.2';
  myPluginAuthor = 'Korney San';
  myPluginShortDescription = '"Next group" and "Prev group" actions.';
  myPluginFullDescription = '';
