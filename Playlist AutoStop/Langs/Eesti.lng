@@ -1,0 +1,6 @@
+﻿[PlaylistAutoStop]
+Plugin_FrameName=Mänguloendi automaatne peatamine
+[Common]
+aimp.PlaylistAutoStop.action.selectplaylist=Praeguse mänguloendi automaatne peatamine
+aimp.PlaylistAutoStop.action.selectplaylist.g=Mänguloendi automaatne peatamine
+aimp.PlaylistAutoStop.menuitem.selectplaylist=Praeguse mänguloendi automaatne peatamine

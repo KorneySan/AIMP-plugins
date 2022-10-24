@@ -1,0 +1,8 @@
+﻿[PlaylistAutoStop]
+Plugin_FrameName=Playlist autostop
+catAutostop=Autostop options
+cbSwitchOffOnPlaylistOff=Switch off playback stop when playlist autostop was switched off
+[Common]
+aimp.PlaylistAutoStop.action.selectplaylist=Autostop of current playlist
+aimp.PlaylistAutoStop.action.selectplaylist.g=Playlist autostop
+aimp.PlaylistAutoStop.menuitem.selectplaylist=Autostop of current playlist

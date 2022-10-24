@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.842,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_SetupFrame.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.927,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_SetupFrame.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.936,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Utils\ControlsLocalization.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.828,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.827,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.327,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\Unit1.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_Defines.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.264,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop.dproj=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022.10.24 00:04:21.892,E:\Projects\RAD Studio 11\Utils\ControlsLocalization.pas=</Transaction>
+    <Transaction>2022.10.24 00:04:54.334,=E:\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas</Transaction>
+    <Transaction>2022.10.24 00:05:24.902,E:\Projects\RAD Studio 11\Playlist AutoStop\PlaylistAutoStop_OptionForm.pas=E:\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

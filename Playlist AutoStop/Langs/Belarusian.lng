@@ -1,0 +1,8 @@
+﻿[PlaylistAutoStop]
+Plugin_FrameName=Аўтастоп плэйліста
+catAutostop=Наладкі аўтастопу
+cbSwitchOffOnPlaylistOff=Адключаць спыненьне прайграваньня пры адключэньні аўтастопу плэйліста
+[Common]
+aimp.PlaylistAutoStop.action.selectplaylist=Аўтастоп бягучага плэйліста
+aimp.PlaylistAutoStop.action.selectplaylist.g=Аўтастоп плэйліста
+aimp.PlaylistAutoStop.menuitem.selectplaylist=Аўтастоп бягучага плэйліста
