@@ -1,5 +1,7 @@
 ﻿[PlaylistAutoStop]
 Plugin_FrameName=Mänguloendi automaatne peatamine
+catAutostop=Automaatpeatamise seaded
+cbSwitchOffOnPlaylistOff=Lülita esitluse peatamine välja, kui mänguloendi automaatne peatamine on väljalülitatud
 [Common]
 aimp.PlaylistAutoStop.action.selectplaylist=Praeguse mänguloendi automaatne peatamine
 aimp.PlaylistAutoStop.action.selectplaylist.g=Mänguloendi automaatne peatamine
