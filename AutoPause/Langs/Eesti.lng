@@ -1,0 +1,14 @@
+﻿[AutoPause]
+AutoPause=AutomaatnePaus
+catAutopause=Automaatse pausi seaded
+gbPCLock=Arvuti lukk
+cbPCLock=Jätkake, kui arvuti on lukustamata
+gbPCIdle=Arvuti ooterežiim
+cbPCIdle=Jätka, kui kasutaja tegevus on taastatud
+gbPCScreenSaver=Ekraanisäästja on käivitatud
+cbPCScreenSaver=Jätka, kui ekraanisäästja on peatatud
+
+[AutoPause.Actions]
+i[0]=Mitte midagi
+i[1]=Paus
+i[2]=Peata

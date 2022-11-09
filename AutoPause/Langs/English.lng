@@ -1,0 +1,14 @@
+﻿[AutoPause]
+AutoPause=AutoPause
+catAutopause=Auto pause settings
+gbPCLock=PC Lock
+cbPCLock=Resume when PC is unlocked
+gbPCIdle=PC Idle
+cbPCIdle=Resume when user activity is restored
+gbPCScreenSaver=Screensaver started
+cbPCScreenSaver=Resume when screensaver is stopped
+
+[AutoPause.Actions]
+i[0]=Nothing
+i[1]=Pause
+i[2]=Stop

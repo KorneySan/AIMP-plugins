@@ -1,0 +1,14 @@
+﻿[AutoPause]
+AutoPause=AutoPauza
+catAutopause=Ustawienia autopauzy
+gbPCLock=PC zablokowany
+cbPCLock=Wznów po odblokowaniu komputera
+gbPCIdle=PC bezczynny
+cbPCIdle=Wznów po aktywności użytkownika
+gbPCScreenSaver=Włączono wygaszacz ekranu
+cbPCScreenSaver=Wznów po wyłączeniu wygaszacza ekranu
+
+[AutoPause.Actions]
+i[0]=Nic
+i[1]=Pauza
+i[2]=Stop

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.264,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop.dproj=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.842,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_SetupFrame.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.927,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_SetupFrame.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.826,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\AutoPause_WindowHook.pas=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.827,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.327,G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\Unit1.pas=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Playlist AutoStop\PlaylistAutoStop_Defines.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.351,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\AutoPause_OptionForm.pas=c:\users\alexander kornienko\documents\embarcadero\studio\projects\rad studio 11\autopause\PlaylistAutoStop_OptionForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.143,=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.574,=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.990,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\apiWrappers_my.pas=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.902,E:\Projects\RAD Studio 11\Playlist AutoStop\PlaylistAutoStop_OptionForm.pas=E:\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.226,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\AutoPause.dproj=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\PlaylistAutoStop.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.732,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\Unit1.dfm=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\PlaylistAutoStop_MessageForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.936,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\AIMP\Utils\ControlsLocalization.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.828,=G:\Documents and Settings\Ingenery\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.306,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\AutoPause_Impl.pas=c:\users\alexander kornienko\documents\embarcadero\studio\projects\rad studio 11\autopause\PlaylistAutoStop_Impl.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.892,E:\Projects\RAD Studio 11\Utils\ControlsLocalization.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.882,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\PlaylistAutoStop_MessageForm.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.732,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\PlaylistAutoStop_MessageForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.799,=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.115,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\AutoPause_WindowHook.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.002,C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\AutoPause\AutoPause_Defines.pas=c:\users\alexander kornienko\documents\embarcadero\studio\projects\rad studio 11\autopause\PlaylistAutoStop_Defines.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.334,=E:\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.557,=C:\Users\Alexander Kornienko\Documents\Embarcadero\Studio\Projects\RAD Studio 11\Playlist AutoStop\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
