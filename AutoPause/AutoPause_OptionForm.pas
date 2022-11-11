@@ -57,7 +57,10 @@ uses
 
 procedure TAIMPPluginOptionForm.ApplyLocalization;
 begin
-  // do nothing
+  ComboBoxUpdateLocalization(FComboBoxPCLock, comboboxItems);
+  ComboBoxUpdateLocalization(FComboBoxPCIdle, comboboxItems);
+  ComboBoxUpdateLocalization(FComboBoxPCScreenSaver, comboboxItems);
+  ConfigLoad;
 end;
 
 procedure TAIMPPluginOptionForm.ComboBoxChanged(const Sender: IInterface);

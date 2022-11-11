@@ -24,7 +24,7 @@ type
 
 const
   myPluginName = 'Auto pause';
-  myPluginVersion = '0.7';
+  myPluginVersion = '0.8';
   myPluginAuthor = 'Korney San';
   myPluginShortDescription = 'Automatic pausing on PC lock, idle & screensaver.';
   myPluginFullDescription = 'Sponsored by Art¸m';

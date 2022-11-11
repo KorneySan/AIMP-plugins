@@ -44,6 +44,7 @@ procedure CreateComboBox(Owner: IAIMPUIForm; Parent: IAIMPUIWinControl;
 procedure SetComboBoxItemIndex(AComboBox: IAIMPUIComboBox; const Value: Integer);
 function GetComboBoxItemIndex(AComboBox: IAIMPUIComboBox): Integer;
 procedure SetControlEnabled(APropertyList: IAIMPPropertyList; Enabled: Boolean);
+procedure ComboBoxUpdateLocalization(AComboBox: IAIMPUIComboBox; const SectionName: string);
 
 implementation
 
@@ -179,6 +180,18 @@ begin
     CheckResult(AComboBox.Add(LangLoadStringEx(SectionName + '\i[' + IntToStr(J)
       + ']'), 0));
   CheckResult(AComboBox.SetValueAsInt32(AIMPUI_COMBOBOX_PROPID_ITEMINDEX, 0));
+end;
+
+procedure ComboBoxUpdateLocalization(AComboBox: IAIMPUIComboBox; const SectionName: string);
+var
+  K: Integer;
+begin
+  if Assigned(AComboBox) then
+   begin
+     for K := 0 to AComboBox.GetItemCount-1 do
+       AComboBox.SetItem(K, LangLoadStringEx(SectionName + '\i[' + IntToStr(K)
+      + ']'));
+   end;
 end;
 
 procedure SetComboBoxItemIndex(AComboBox: IAIMPUIComboBox; const Value: Integer);
