@@ -32,7 +32,6 @@ type
   private
     FFrame: TAIMPPluginOptionFrame;
     FMessageHWnd: HWND;
-    FAPITimer: Integer;
     procedure WndMethod(var Msg: TMessage);
     function ServiceTest: Boolean;
     //
@@ -50,6 +49,8 @@ type
   public
   end;
 
+procedure RestartTimer(DoStart: Boolean);
+
 implementation
 
 uses
@@ -58,11 +59,12 @@ uses
 
 var
   myPlugin: TAIMPPlugin = nil;
+  FAPITimer: Integer;
 
 procedure TimeCallBack(uTimerID, uMessage: UINT; dwUser, dw1,
   dw2: DWORD);
 var
-  IsRunning: Boolean;
+  IsRunning: BOOL;
 begin
   if not Assigned(myPlugin) then Exit;
 
@@ -81,6 +83,23 @@ begin
       myPlugin.DoResumeAction(mySettings.PCScreenSaver);
      end;
    end;
+end;
+
+procedure StartTimer;
+begin
+  FAPITimer := timeSetEvent(1000, 100, @TimeCallBack, 100, TIME_CALLBACK_FUNCTION or TIME_PERIODIC);
+end;
+
+procedure StopTimer;
+begin
+  timeKillEvent(FAPITimer);
+end;
+
+procedure RestartTimer(DoStart: Boolean);
+begin
+  StopTimer;
+  if DoStart then
+    StartTimer;
 end;
 
 { TAIMPPlugin }
@@ -108,7 +127,7 @@ procedure TAIMPPlugin.Finalize;
 var
   AMDService: IAIMPServiceMessageDispatcher;
 begin
-  timeKillEvent(FAPITimer);
+  StopTimer;
   myPlugin := nil;
   WTSUnRegisterSessionNotification(FMessageHWnd);
   DeallocateHWnd(FMessageHWnd);
@@ -192,7 +211,8 @@ begin
     RegisterPowerSettingNotification(FMessageHWnd, GUID_SESSION_USER_PRESENCE, DEVICE_NOTIFY_WINDOW_HANDLE);
     // timer for screensaver capture
     myPlugin := Self;
-    FAPITimer := timeSetEvent(1000, 100, @TimeCallBack, 100, TIME_CALLBACK_FUNCTION or TIME_PERIODIC or TIME_KILL_SYNCHRONOUS);
+    if mySettings.PCScreenSaver.PlayerAction <> apNothing then
+      StartTimer;
   end;
 end;
 

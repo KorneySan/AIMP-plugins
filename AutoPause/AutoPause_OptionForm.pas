@@ -51,7 +51,10 @@ type
 implementation
 
 uses
-  Math, apiWrappers, AutoPause_Defines, apiWrappers_my;
+  Math,
+  apiWrappers,
+  AutoPause_Impl,
+  AutoPause_Defines, apiWrappers_my;
 
 { TAIMPPluginOptionForm }
 
@@ -91,6 +94,7 @@ procedure TAIMPPluginOptionForm.ConfigSave;
 begin
   GetControls;
   SaveSettings(mySettings);
+  RestartTimer(mySettings.PCScreenSaver.PlayerAction <> apNothing);
 end;
 
 constructor TAIMPPluginOptionForm.Create(AParentWnd: HWND);
