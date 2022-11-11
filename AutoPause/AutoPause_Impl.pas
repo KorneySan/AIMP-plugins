@@ -39,8 +39,8 @@ type
     procedure PlayerResume;
     procedure PlayerStop;
     function PlayerState: Integer;
-    procedure DoStopAction(const AAction: TSettingsActions);
-    procedure DoResumeAction(const AAction: TSettingsActions);
+    procedure DoStopAction(var AAction: TSettingsActions);
+    procedure DoResumeAction(var AAction: TSettingsActions);
   protected
     function InfoGet(Index: Integer): PWideChar; override; stdcall;
     function InfoGetCategories: Cardinal; override; stdcall;
@@ -104,23 +104,35 @@ end;
 
 { TAIMPPlugin }
 
-procedure TAIMPPlugin.DoResumeAction(const AAction: TSettingsActions);
+procedure TAIMPPlugin.DoResumeAction(var AAction: TSettingsActions);
 begin
   with AAction do
   begin
-    if (PlayerAction = apPause) and DoResume then
+    if (PlayerAction = apPause) and DoResume and Armed then
+     begin
+      Armed := False;
       PlayerResume;
+     end;
   end;
 end;
 
-procedure TAIMPPlugin.DoStopAction(const AAction: TSettingsActions);
+procedure TAIMPPlugin.DoStopAction(var AAction: TSettingsActions);
 begin
-  case AAction.PlayerAction of
-    apPause:
-      PlayerPause;
-    apStop:
-      PlayerStop;
-  end;
+  if PlayerState = AIMP_PLAYER_STATE_PLAYING then
+   begin
+    case AAction.PlayerAction of
+      apPause:
+       begin
+        AAction.Armed := True;
+        PlayerPause;
+       end;
+      apStop:
+       begin
+        AAction.Armed := False;
+        PlayerStop;
+       end;
+    end;
+   end;
 end;
 
 procedure TAIMPPlugin.Finalize;

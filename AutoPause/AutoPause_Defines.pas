@@ -14,6 +14,8 @@ type
   TSettingsActions = record
     PlayerAction: TAPAction;
     DoResume: Boolean;
+    // internal use, don't save
+    Armed: Boolean;
   end;
 
   TSettings = record
@@ -24,7 +26,7 @@ type
 
 const
   myPluginName = 'Auto pause';
-  myPluginVersion = '0.8.1';
+  myPluginVersion = '0.8.2';
   myPluginAuthor = 'Korney San';
   myPluginShortDescription = 'Automatic pausing on PC lock, idle & screensaver.';
   myPluginFullDescription = 'Sponsored by Art¸m';
