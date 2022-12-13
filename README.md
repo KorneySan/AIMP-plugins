@@ -8,3 +8,7 @@ Collection of plugins for different purpose
 - [NextGroup](docs/NextGroup.md)
 - [Playlist Autostop](docs/PlaylistAutostop.md)
 - to be continued...
+
+Template
+---
+Template is bare minimum plugin code to start writing from scratch. Options form is prepared.
