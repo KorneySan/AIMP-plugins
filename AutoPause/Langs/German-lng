@@ -1,0 +1,14 @@
+[AutoPause]
+AutoPause=AutoPause
+catAutopause=Auto Pause Einstellungen
+gbPCLock=PC Sperre
+cbPCLock=Fortfahren wenn der PC entsperrt wird
+gbPCIdle=PC im Leerlauf
+cbPCIdle=Fortfahren wenn der PC aus dem Leerlauf kommt
+gbPCScreenSaver=Bildschirmschoner gestartet
+cbPCScreenSaver=Fortfahren wenn der Bildschirmschoner beendet wird
+
+[AutoPause.Actions]
+i[0]=Nichts
+i[1]=Pause
+i[2]=Stop
