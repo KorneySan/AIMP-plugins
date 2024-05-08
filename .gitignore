@@ -5,3 +5,6 @@ docs/PlaylistAutostop.md.bak
 *.identcache
 *.dll
 *.dcu
+AutoPause/__*
+AutoPause/Win32
+AutoPause/Win64
