@@ -136,8 +136,6 @@ begin
 end;
 
 procedure TAIMPPlugin.Finalize;
-var
-  AMDService: IAIMPServiceMessageDispatcher;
 begin
   StopTimer;
   myPlugin := nil;
@@ -197,7 +195,6 @@ end;
 
 function TAIMPPlugin.Initialize(Core: IAIMPCore): HRESULT;
 var
-  AMDService: IAIMPServiceMessageDispatcher;
   AString: IAIMPString;
 begin
   Result := inherited Initialize(Core);
@@ -290,7 +287,6 @@ end;
 procedure TAIMPPlugin.WndMethod(var Msg: TMessage);
 var
   PBS: POWERBROADCAST_SETTING;
-  myWParam: WPARAM;
 begin
   case Msg.Msg of
     WM_WTSSESSION_CHANGE:

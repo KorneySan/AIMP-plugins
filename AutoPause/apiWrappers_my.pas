@@ -43,8 +43,15 @@ procedure CreateComboBox(Owner: IAIMPUIForm; Parent: IAIMPUIWinControl;
   AServiceUI: IAIMPServiceUI = nil);
 procedure SetComboBoxItemIndex(AComboBox: IAIMPUIComboBox; const Value: Integer);
 function GetComboBoxItemIndex(AComboBox: IAIMPUIComboBox): Integer;
-procedure SetControlEnabled(APropertyList: IAIMPPropertyList; Enabled: Boolean);
 procedure ComboBoxUpdateLocalization(AComboBox: IAIMPUIComboBox; const SectionName: string);
+procedure CreateLabel(Owner: IAIMPUIForm; Parent: IAIMPUIWinControl;
+  LabelName, LabelText: String; EventsHandler: IUnknown;
+  const Alignment: TAIMPUIControlAlignment; out ALabel: IAIMPUILabel; AServiceUI: IAIMPServiceUI = nil);
+procedure CreateButton(Owner: IAIMPUIForm; Parent: IAIMPUIWinControl;
+  ButtonName, ButtonCaption: String; EventsHandler: IUnknown;
+  const Alignment: TAIMPUIControlAlignment; out AButton: IAIMPUIButton;
+  AServiceUI: IAIMPServiceUI = nil);
+procedure SetControlEnabled(APropertyList: IAIMPPropertyList; Enabled: Boolean);
 
 implementation
 
@@ -202,6 +209,43 @@ end;
 function GetComboBoxItemIndex(AComboBox: IAIMPUIComboBox): Integer;
 begin
   Result := PropListGetInt32(AComboBox, AIMPUI_COMBOBOX_PROPID_ITEMINDEX);
+end;
+
+procedure CreateLabel(Owner: IAIMPUIForm; Parent: IAIMPUIWinControl;
+  LabelName, LabelText: String; EventsHandler: IUnknown;
+  const Alignment: TAIMPUIControlAlignment; out ALabel: IAIMPUILabel; AServiceUI: IAIMPServiceUI = nil);
+var
+  ServiceUI: IAIMPServiceUI;
+begin
+  ServiceUI := AServiceUI;
+  if not Assigned(ServiceUI) then
+    CoreGetService(IAIMPServiceUI, ServiceUI);
+
+  CheckResult(ServiceUI.CreateControl(Owner, Parent, MakeString(LabelName),
+    EventsHandler, IAIMPUILabel, ALabel));
+  CheckResult(ALabel.SetPlacement(TAIMPUIControlPlacement.Create
+    (Alignment, 0)));
+  CheckResult(ALabel.SetValueAsObject(AIMPUI_LABEL_PROPID_TEXT,
+    MakeString(LabelText)));
+end;
+
+procedure CreateButton(Owner: IAIMPUIForm; Parent: IAIMPUIWinControl;
+  ButtonName, ButtonCaption: String; EventsHandler: IUnknown;
+  const Alignment: TAIMPUIControlAlignment; out AButton: IAIMPUIButton;
+  AServiceUI: IAIMPServiceUI = nil);
+var
+  ServiceUI: IAIMPServiceUI;
+begin
+  ServiceUI := AServiceUI;
+  if not Assigned(ServiceUI) then
+    CoreGetService(IAIMPServiceUI, ServiceUI);
+
+  CheckResult(ServiceUI.CreateControl(Owner, Parent, MakeString(ButtonName),
+    EventsHandler, IAIMPUIButton, AButton));
+  CheckResult(AButton.SetPlacement(TAIMPUIControlPlacement.Create
+    (Alignment, 0)));
+  CheckResult(AButton.SetValueAsObject(AIMPUI_BUTTON_PROPID_CAPTION,
+    MakeString(ButtonCaption)));
 end;
 
 procedure SetControlEnabled(APropertyList: IAIMPPropertyList; Enabled: Boolean);

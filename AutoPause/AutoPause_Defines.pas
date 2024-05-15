@@ -26,7 +26,7 @@ type
 
 const
   myPluginName = 'Auto pause';
-  myPluginVersion = '0.8.2';
+  myPluginVersion = '0.9';
   myPluginAuthor = 'Korney San';
   myPluginShortDescription = 'Automatic pausing on PC lock, idle & screensaver.';
   myPluginFullDescription = 'Sponsored by Art¸m';
@@ -54,6 +54,10 @@ const
   comboboxPCScreenSaver = 'cbxPCScreenSaver';
   checkboxPCScreenSaver = 'cbPCScreenSaver';
   checkboxPCScreenSaverDefault = 'Resume when screensaver is stopped';
+  labelPCScreenSaverTime = 'lblPCScreenSaverTime';
+  labelPCScreenSaverTimeFormat = 'Screensaver time: %s (%s)';
+  buttonPCScreenSaver = 'btnPCScreenSaver';
+  buttonPCScreenSaverDefault = 'Settings';
   // default settings
   comboboxPCLockDefaultValue = apNothing;
   checkboxPCLockDefaultValue = True;

@@ -26,9 +26,14 @@ type
     FGroupBoxPCScreenSaver: IAIMPUIGroupBox;
     FComboBoxPCScreenSaver: IAIMPUIComboBox;
     FCheckBoxPCScreenSaver: IAIMPUICheckBox;
+    FLabelPCScreenSaverTime: IAIMPUILabel;
+    FButtonHandler: TAIMPUINotifyEventAdapter;
+    FButtonPCScreenSaver: IAIMPUIButton;
+    FComboBox: IAIMPUIComboBox;
 
     procedure HandlerChanged(const Sender: IUnknown);
     procedure ComboBoxChanged(const Sender: IUnknown);
+    procedure ButtonPressed(const Sender: IUnknown);
   private
 
   protected
@@ -52,9 +57,26 @@ implementation
 
 uses
   Math,
+  StrUtils,
   apiWrappers,
   AutoPause_Impl,
   AutoPause_Defines, apiWrappers_my;
+
+function GetScreenSaverTimeoutSec: Integer;
+ var
+  Sec: Integer;
+begin
+  SystemParametersInfo(SPI_GETSCREENSAVETIMEOUT, 0, @Sec, 0);
+  Result := Sec;
+end;
+
+function GetScreenSaverEnabled: Boolean;
+ var
+  IsEnabled: BOOL;
+begin
+  SystemParametersInfo(SPI_GETSCREENSAVEACTIVE, 0, @IsEnabled, 0);
+  Result := IsEnabled;
+end;
 
 { TAIMPPluginOptionForm }
 
@@ -66,8 +88,17 @@ begin
   ConfigLoad;
 end;
 
+procedure TAIMPPluginOptionForm.ButtonPressed(const Sender: IInterface);
+begin
+  //
+  if Sender = FButtonPCScreenSaver then
+   begin
+    MessageBox(0, 'Pressed!', 'Button', 0);
+   end;
+end;
+
 procedure TAIMPPluginOptionForm.ComboBoxChanged(const Sender: IInterface);
-  procedure CheckChomboBoxForCheck(AComboBox: IAIMPUIComboBox; ACheckBox: IAIMPUICheckBox);
+  procedure CheckComboBoxForCheck(AComboBox: IAIMPUIComboBox; ACheckBox: IAIMPUICheckBox);
   var
     b: Boolean;
   begin
@@ -79,9 +110,9 @@ procedure TAIMPPluginOptionForm.ComboBoxChanged(const Sender: IInterface);
     end;
   end;
 begin
-  CheckChomboBoxForCheck(FComboBoxPCLock, FCheckBoxPCLock);
-  CheckChomboBoxForCheck(FComboBoxPCIdle, FCheckBoxPCIdle);
-  CheckChomboBoxForCheck(FComboBoxPCScreenSaver, FCheckBoxPCScreenSaver);
+  CheckComboBoxForCheck(FComboBoxPCLock, FCheckBoxPCLock);
+  CheckComboBoxForCheck(FComboBoxPCIdle, FCheckBoxPCIdle);
+  CheckComboBoxForCheck(FComboBoxPCScreenSaver, FCheckBoxPCScreenSaver);
   HandlerChanged(Sender);
 end;
 
@@ -103,6 +134,7 @@ begin
 
   FHandlerChanged := TAIMPUINotifyEventAdapter.Create(HandlerChanged);
   FComboBoxChanged := TAIMPUINotifyEventAdapter.Create(ComboBoxChanged);
+  FButtonHandler := TAIMPUINotifyEventAdapter.Create(ButtonPressed);
 
   CreateControls;
 end;
@@ -124,6 +156,18 @@ procedure TAIMPPluginOptionForm.CreateControls;
    CreateCheckBox(FForm, Parent, Name,
      GetLocalization(Name, DefaultName), FHandlerChanged,
      ualTop, DefaultValue, ACheck);
+  end;
+  procedure CreateSettingsLabel(Parent: IAIMPUIWinControl; const Name, DefaultName: String; out ALabel: IAIMPUILabel);
+  begin
+   CreateLabel(FForm, Parent, Name,
+     GetLocalization(Name, DefaultName), FHandlerChanged,
+     ualTop, ALabel);
+  end;
+  procedure CreateSettingsButton(Parent: IAIMPUIWinControl; const Name, DefaultName: String; out AButton: IAIMPUIButton);
+  begin
+   CreateButton(FForm, Parent, Name,
+     GetLocalization(Name, DefaultName), FButtonHandler,
+     ualTop, AButton);
   end;
 begin
   // Create the Category
@@ -148,6 +192,10 @@ begin
   CreateSettingsCheck(FGroupBoxPCScreenSaver, checkboxPCScreenSaver, checkboxPCScreenSaverDefault,
   checkboxPCScreenSaverDefaultValue, FCheckBoxPCScreenSaver);
   SetControlEnabled(FCheckBoxPCScreenSaver, False);
+  CreateSettingsLabel(FGroupBoxPCScreenSaver, labelPCScreenSaverTime, Format(labelPCScreenSaverTimeFormat, [TimeToStr(EncodeTime(0, 0, GetScreenSaverTimeoutSec, 0)), IfThen(GetScreenSaverEnabled, 'enabled', 'disabled')]), FLabelPCScreenSaverTime);
+  CreateSettingsButton(FGroupBoxPCScreenSaver, buttonPCScreenSaver, buttonPCScreenSaverDefault, FButtonPCScreenSaver);
+  SetControlEnabled(FButtonPCScreenSaver, True);
+  CreateSettingsCombo(FGroupBoxPCScreenSaver, comboboxPCScreenSaver, FComboBox);
 end;
 
 destructor TAIMPPluginOptionForm.Destroy;
