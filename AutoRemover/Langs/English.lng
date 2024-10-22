@@ -1,0 +1,4 @@
+[Common]
+aimp.AutoRemover.action.selectplaylist=Remove "played" track from current playlist
+aimp.AutoRemover.action.selectplaylist.g=Auto remover
+aimp.AutoRemover.menuitem.selectplaylist=Remove "played" track from current playlist

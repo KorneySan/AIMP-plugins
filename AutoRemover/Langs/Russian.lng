@@ -1,0 +1,4 @@
+﻿[Common]
+aimp.AutoRemover.action.selectplaylist=Удалять «проигранные» треки из этого плейлиста
+aimp.AutoRemover.action.selectplaylist.g=Автоудаление
+aimp.AutoRemover.menuitem.selectplaylist=Удалять «проигранные» треки из этого плейлиста
